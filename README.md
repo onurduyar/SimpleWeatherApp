@@ -105,6 +105,13 @@ func anchor(top: NSLayoutYAxisAnchor?, leading: NSLayoutXAxisAnchor?, trailing: 
     }
 ```
 
+
+
+https://github.com/onurduyar/SimpleWeatherApp/assets/61862393/332a6341-85e1-473e-ab3b-1a07eede8be3
+
+
+
+
 ### The MIT License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  
