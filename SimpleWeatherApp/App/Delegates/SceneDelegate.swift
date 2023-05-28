@@ -67,7 +67,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         return homeVC
     }
     func createCitiesVC() -> UINavigationController {
-        let citiesVC = WeatherVC()
+        let citiesVC = CitiesVC()
         citiesVC.title = "Cities"
         citiesVC.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "location.circle"), tag: 1)
         citiesVC.tabBarItem.selectedImage = UIImage(systemName: "location.circle.fill")
