@@ -9,6 +9,13 @@ The app leverages the power of Swift and UIKit to deliver a seamless and intuiti
 
 <img src="https://github.com/onurduyar/SimpleWeatherApp/blob/main/Assets/gitflow.png" alt="">
 
+## Project Development Process
+
+During the development process of this project, Trello was used for project management and git version control system was used for code base management. During the project development process, I determined and assigned tasks as if I was working in a team.
+
+<img src="https://github.com/onurduyar/SimpleWeatherApp/blob/main/Assets/trello.png" width="700" alt="">
+
+
 
 ## Features
 
