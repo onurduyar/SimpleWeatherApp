@@ -5,6 +5,11 @@ SimpleWeatherApp is a iOS application developed using the MVVM architectural pat
 The app leverages the power of Swift and UIKit to deliver a seamless and intuitive user interface.
 
 
+## GitFlow Strategy
+
+<img src="https://github.com/onurduyar/SimpleWeatherApp/blob/main/Assets/gitflow.png" alt="">
+
+
 ## Features
 
 - Programmatic UI
