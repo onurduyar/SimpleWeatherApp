@@ -27,6 +27,21 @@ During the development process of this project, Trello was used for project mana
 - BaseViewModel
 - Env. file for 'API_KEY'
 
+## Environment File For Your 'API_KEY'
+
+Here are the revised instructions:
+
+Go to the OpenWeatherMap website and obtain an API key.
+Set the API key as an environment variable in your Xcode project scheme(s) by following these steps:
+- Open your project in Xcode.
+- Access the "Product" menu and select "Scheme," then choose "Edit Scheme."
+- In the left sidebar, choose "Run."
+- Navigate to the "Arguments" tab.
+- Click the "+" button under "Environment Variables" to add a new variable.
+- Enter "API_KEY" as the name and input your OpenWeatherMap API key as the value.
+- Close the scheme editor.
+Build and run your project in Xcode.
+
 ## Screenshots 
 
 | SwiftUI - WeatherView   | UIKit - WeatherView    | CitiesView             |
