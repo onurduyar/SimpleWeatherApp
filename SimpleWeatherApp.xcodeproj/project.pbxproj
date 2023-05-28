@@ -17,6 +17,7 @@
 		78BE74282A239CB100DA01D6 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BE74272A239CB100DA01D6 /* DataRequest.swift */; };
 		78BE742A2A239CBF00DA01D6 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BE74292A239CBF00DA01D6 /* Endpoint.swift */; };
 		78BE742C2A239CDA00DA01D6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BE742B2A239CDA00DA01D6 /* NetworkService.swift */; };
+		78BE74362A239E9300DA01D6 /* LocalJSONNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BE74352A239E9300DA01D6 /* LocalJSONNetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		78BE74272A239CB100DA01D6 /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		78BE74292A239CBF00DA01D6 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		78BE742B2A239CDA00DA01D6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		78BE74352A239E9300DA01D6 /* LocalJSONNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalJSONNetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				78BE742B2A239CDA00DA01D6 /* NetworkService.swift */,
+				78BE74352A239E9300DA01D6 /* LocalJSONNetworkService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			files = (
 				78BE742A2A239CBF00DA01D6 /* Endpoint.swift in Sources */,
 				78BE74262A239CA400DA01D6 /* ErrorResponse.swift in Sources */,
+				78BE74362A239E9300DA01D6 /* LocalJSONNetworkService.swift in Sources */,
 				78BE742C2A239CDA00DA01D6 /* NetworkService.swift in Sources */,
 				78BE74242A239C9D00DA01D6 /* HTTPMethod.swift in Sources */,
 				78BE740A2A239A1200DA01D6 /* ViewController.swift in Sources */,
