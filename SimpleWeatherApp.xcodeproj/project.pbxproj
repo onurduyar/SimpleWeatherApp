@@ -29,6 +29,7 @@
 		78BE74512A23A2D300DA01D6 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BE74502A23A2D300DA01D6 /* WeatherView.swift */; };
 		78BE74532A23A2E700DA01D6 /* ShortCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BE74522A23A2E700DA01D6 /* ShortCardView.swift */; };
 		78BE74552A23A2F100DA01D6 /* LongCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BE74542A23A2F100DA01D6 /* LongCardView.swift */; };
+		78BE745B2A23A86F00DA01D6 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BE745A2A23A86F00DA01D6 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		78BE74502A23A2D300DA01D6 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		78BE74522A23A2E700DA01D6 /* ShortCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortCardView.swift; sourceTree = "<group>"; };
 		78BE74542A23A2F100DA01D6 /* LongCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongCardView.swift; sourceTree = "<group>"; };
+		78BE745A2A23A86F00DA01D6 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		78BE741B2A239A5200DA01D6 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				78BE74592A23A85D00DA01D6 /* Extension */,
 				78BE74202A239C7600DA01D6 /* Network */,
 			);
 			path = Core;
@@ -220,6 +223,7 @@
 		78BE744D2A23A2A500DA01D6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				78BE74562A23A81C00DA01D6 /* UIKit */,
 				78BE744E2A23A2AD00DA01D6 /* SwiftUI */,
 			);
 			path = View;
@@ -233,6 +237,21 @@
 				78BE74542A23A2F100DA01D6 /* LongCardView.swift */,
 			);
 			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		78BE74562A23A81C00DA01D6 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		78BE74592A23A85D00DA01D6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				78BE745A2A23A86F00DA01D6 /* UIView+Extensions.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78BE745B2A23A86F00DA01D6 /* UIView+Extensions.swift in Sources */,
 				78BE742A2A239CBF00DA01D6 /* Endpoint.swift in Sources */,
 				78BE74262A239CA400DA01D6 /* ErrorResponse.swift in Sources */,
 				78BE74552A23A2F100DA01D6 /* LongCardView.swift in Sources */,
