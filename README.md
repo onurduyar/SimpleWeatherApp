@@ -26,6 +26,7 @@ During the development process of this project, Trello was used for project mana
 - Both SwiftUI And UIKit Interface
 - BaseViewModel
 - Env. file for 'API_KEY'
+- Searching Cities
 
 ## Environment File For Your 'API_KEY'
 
