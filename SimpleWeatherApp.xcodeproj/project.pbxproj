@@ -23,6 +23,7 @@
 		78BE743D2A239F5A00DA01D6 /* LocalRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BE743C2A239F5A00DA01D6 /* LocalRequest.swift */; };
 		78BE74402A239F7B00DA01D6 /* CityResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BE743F2A239F7B00DA01D6 /* CityResponse.swift */; };
 		78BE74422A239F8100DA01D6 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BE74412A239F8100DA01D6 /* WeatherResponse.swift */; };
+		78BE74452A23A1CD00DA01D6 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BE74442A23A1CD00DA01D6 /* BaseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		78BE743C2A239F5A00DA01D6 /* LocalRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRequest.swift; sourceTree = "<group>"; };
 		78BE743F2A239F7B00DA01D6 /* CityResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityResponse.swift; sourceTree = "<group>"; };
 		78BE74412A239F8100DA01D6 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		78BE74442A23A1CD00DA01D6 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		78BE741A2A239A4200DA01D6 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				78BE74442A23A1CD00DA01D6 /* BaseViewModel.swift */,
 				78BE74092A239A1200DA01D6 /* ViewController.swift */,
 				78BE743F2A239F7B00DA01D6 /* CityResponse.swift */,
 				78BE74412A239F8100DA01D6 /* WeatherResponse.swift */,
@@ -258,6 +261,7 @@
 				78BE74282A239CB100DA01D6 /* DataRequest.swift in Sources */,
 				78BE74062A239A1200DA01D6 /* AppDelegate.swift in Sources */,
 				78BE743D2A239F5A00DA01D6 /* LocalRequest.swift in Sources */,
+				78BE74452A23A1CD00DA01D6 /* BaseViewModel.swift in Sources */,
 				78BE74402A239F7B00DA01D6 /* CityResponse.swift in Sources */,
 				78BE74392A239F4C00DA01D6 /* APIRequest.swift in Sources */,
 				78BE74082A239A1200DA01D6 /* SceneDelegate.swift in Sources */,
