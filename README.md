@@ -27,6 +27,7 @@ During the development process of this project, Trello was used for project mana
 - BaseViewModel
 - Env. file for 'API_KEY'
 - Searching Cities
+- MVVM Architecture
 
 ## Environment File For Your 'API_KEY'
 
