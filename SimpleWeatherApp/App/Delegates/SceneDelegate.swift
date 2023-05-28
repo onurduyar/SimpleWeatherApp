@@ -18,8 +18,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = WeatherVC()
         window?.makeKeyAndVisible()
+        
+        let tabBarController = UITabBarController()
+        let viewControllers = [
+            createHomeVC(),
+            createCitiesVC(),
+        ]
+        tabBarController.tabBar.tintColor = .black
+        tabBarController.tabBar.backgroundColor = .white
+        tabBarController.viewControllers = viewControllers
+        
+        window?.rootViewController = tabBarController
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -49,7 +59,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
+    func createHomeVC() -> UIViewController {
+        let homeVC = WeatherVC()
+        //homeVC.title = "Kategoriler"
+        homeVC.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "cloud"), tag: 0)
+        homeVC.tabBarItem.selectedImage = UIImage(systemName: "cloud.fill")
+        return homeVC
+    }
+    func createCitiesVC() -> UINavigationController {
+        let citiesVC = WeatherVC()
+        citiesVC.title = "Cities"
+        citiesVC.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "location.circle"), tag: 1)
+        citiesVC.tabBarItem.selectedImage = UIImage(systemName: "location.circle.fill")
+        return UINavigationController(rootViewController: citiesVC)
+    }
 
 }
 
