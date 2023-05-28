@@ -9,9 +9,10 @@ import Foundation
 
 struct WeatherRequest: APIRequest {
     let apiKey = ProcessInfo.processInfo.environment["API_KEY"]
+    
     let id: String
     let appID: String
-
+    
     typealias Response = WeatherElement
     
     var path: String {
@@ -29,10 +30,10 @@ struct WeatherRequest: APIRequest {
     }
     init(id: String) {
         self.id = id
-               guard let apiKey = ProcessInfo.processInfo.environment["API_KEY"] else {
-                   fatalError(ErrorResponse.apiKeyMissing.rawValue)
-               }
-               self.appID = apiKey
+        guard let apiKey = ProcessInfo.processInfo.environment["API_KEY"] else {
+            fatalError(ErrorResponse.apiKeyMissing.rawValue)
+        }
+        self.appID = apiKey
     }
     func decode(_ data: Data) throws -> WeatherElement {
         try JSONDecoder().decode(Response.self, from: data)
