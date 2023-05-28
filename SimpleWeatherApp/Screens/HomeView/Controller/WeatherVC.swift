@@ -41,7 +41,10 @@ final class WeatherVC: UIViewController {
 extension WeatherVC: WeatherViewModelDelegate {
     func weatherDataDidChange(_ viewModel: WeatherViewModel) {
         DispatchQueue.main.async {
-            self.setupSwiftUI()
+            // self.setupSwiftUI()
+            let weatherView = WeatherViewUIKit()
+            self.view = weatherView
+            weatherView.selectedWeather = viewModel.selectedCity
             self.swiftUIHostingController.rootView = WeatherView(selectedWeather: viewModel.selectedCity)
             self.activityIndicator.stopAnimating()
         }

@@ -30,6 +30,7 @@
 		78BE74532A23A2E700DA01D6 /* ShortCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BE74522A23A2E700DA01D6 /* ShortCardView.swift */; };
 		78BE74552A23A2F100DA01D6 /* LongCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BE74542A23A2F100DA01D6 /* LongCardView.swift */; };
 		78BE745B2A23A86F00DA01D6 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BE745A2A23A86F00DA01D6 /* UIView+Extensions.swift */; };
+		78BE745D2A23A8EF00DA01D6 /* WeatherViewUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BE745C2A23A8EF00DA01D6 /* WeatherViewUIKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		78BE74522A23A2E700DA01D6 /* ShortCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortCardView.swift; sourceTree = "<group>"; };
 		78BE74542A23A2F100DA01D6 /* LongCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongCardView.swift; sourceTree = "<group>"; };
 		78BE745A2A23A86F00DA01D6 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		78BE745C2A23A8EF00DA01D6 /* WeatherViewUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewUIKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +244,7 @@
 		78BE74562A23A81C00DA01D6 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				78BE745C2A23A8EF00DA01D6 /* WeatherViewUIKit.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				78BE743D2A239F5A00DA01D6 /* LocalRequest.swift in Sources */,
 				78BE74452A23A1CD00DA01D6 /* BaseViewModel.swift in Sources */,
 				78BE74402A239F7B00DA01D6 /* CityResponse.swift in Sources */,
+				78BE745D2A23A8EF00DA01D6 /* WeatherViewUIKit.swift in Sources */,
 				78BE744A2A23A26400DA01D6 /* WeatherViewModel.swift in Sources */,
 				78BE74532A23A2E700DA01D6 /* ShortCardView.swift in Sources */,
 				78BE74512A23A2D300DA01D6 /* WeatherView.swift in Sources */,
