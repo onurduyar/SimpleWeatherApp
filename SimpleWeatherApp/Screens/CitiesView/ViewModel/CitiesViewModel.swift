@@ -42,22 +42,19 @@ final class CitiesViewModel:BaseViewModel {
     weak var delegate: CitiesViewModelDelegate?
     
     // methods
-    func viewDidLoad() {
-        fetchCities()
-    }
-    
-    func fetchCities() {
-        self.isLoading = true
-        localJSONNetworkService.request(LocalRequest()) { [weak self] result in
-            self?.handleRequestResult(result: result, successBlock: { response in
-                self?.cities = self?.moveTRCitiesToBeginning(response)
-                self?.mainCities = self?.cities
-                self?.isLoading = false
-            }, failureBlock: { error in
-                fatalError(error.localizedDescription)
-            })
-        }
-    }
+  
+    func fetchCities(onsucces: @escaping () -> Void,  onfailed: @escaping () -> Void) {
+         localJSONNetworkService.request(LocalRequest()) { [weak self] result in
+             self?.handleRequestResult(result: result, successBlock: { response in
+                 self?.cities = self?.moveTRCitiesToBeginning(response)
+                 self?.mainCities = self?.cities
+                 onsucces()
+             }, failureBlock: { error in
+                 fatalError(error.localizedDescription)
+             })
+         }
+     }
+     
     
     func fetchWeather(for city: City) {
         guard let id = city.id else { return }

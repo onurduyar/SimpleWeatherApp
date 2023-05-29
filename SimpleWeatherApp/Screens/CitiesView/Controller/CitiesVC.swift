@@ -24,7 +24,17 @@ final class CitiesVC: UIViewController {
         viewModel.delegate = self
         
     
-        viewModel.viewDidLoad()
+        
+        citiesView.activityIndicator.startAnimating()
+             DispatchQueue.main.async {
+                 self.viewModel.fetchCities {
+                     self.citiesView.refresh()
+                     self.citiesView.activityIndicator.stopAnimating()
+                 } onfailed: {
+                     
+                 }
+             }
+
     }
 }
 
